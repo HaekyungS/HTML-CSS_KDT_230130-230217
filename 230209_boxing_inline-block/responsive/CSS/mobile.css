@@ -1,0 +1,6 @@
+@media screen and (max-width:600px) {
+  div {
+    border: 0;
+    background-color: brown;
+  }
+}
