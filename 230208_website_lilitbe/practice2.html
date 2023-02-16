@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --color-1 : darksalmon;
+      --color-2 : darkgrey;
+      --color-3 : black;
+      --mainwidth : 100px;
+      --mainheight : 150px;
+    }
+    body>div{
+      height: var(--mainheight);
+      width: var(--mainwidth);
+    }
+
+    body>div:nth-child(1)>ul>li:nth-child(3) {
+      background-color: var(--color-1);
+    }
+    body>div:nth-child(3){
+      background-color: var(--color-2);
+    }
+    div:nth-child(2){
+      background-color: var(--color-3);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <ul>
+      <li>items-1</li>
+      <li>items-2</li>
+      <li>items-3</li>
+      <li>items-4</li>
+      <li>items-5</li>
+    </ul>
+  </div>
+  <div></div>
+  <div></div>
+</body>
+</html>

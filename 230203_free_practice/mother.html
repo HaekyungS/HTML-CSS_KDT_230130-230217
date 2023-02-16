@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mather</title>
+  <style>
+    body{
+      justify-content: center;
+      display: flex;
+    }
+    form {
+      border: 0.1cm solid aqua;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    textarea, li{
+      margin: 5px;
+      resize: none;
+    }
+    .grandma01 {
+      width: 640px;
+    }
+    </style>
+</head>
+<body>
+  <form action="grandma.php" class="grandma01">
+    <div>
+      <h1>엄마의 일상 체크리스트</h1>
+      <ul>
+        <li>세안을 했나요?
+          <input type="checkbox" name="세안" value="morning">아침
+          <input type="checkbox" name="세안" value="night">저녁
+        </li>
+        <li>식사를 했나요?
+          <input type="checkbox" name="식사" value="morning">아침
+          <input type="checkbox" name="식사" value="lunch">점심
+          <input type="checkbox" name="식사" value="night">저녁
+        </li>
+        <li>몇시에 잠을 잤나요?
+          <input type="time" name="시간" value="sleeptime">
+        </li>
+        <li>
+          몇시에 귀가하였습니까?
+          <input type="time" name="시간" value="comebacktime">
+        </li>
+        <li>
+          할머니 혼자계신대 가족들이 아무도 집에 없습니다. 어떻게 할 것입니까?
+          <div>
+            <input type="radio" name="action1" value="sel2-1"> 같이 밥먹기 위해 집에 일찍온다. <br />
+            <input type="radio" name="action1" value="sel2-2"> 혼자 알아서 드시겠지 하고 늦는다. <br />
+            <input type="radio" name="action1" value="sel2-3"> 늦는다 전화를 하고 하염없이 늦게 간다. <br />
+          </div>
+        </li>
+        <li>
+          가족들에게 할 말이 있으면 쓰세요. <br/>
+              <textarea name="say2" rows="3" cols="50" placeholder=" 할말을 쓰시오."></textarea>
+        </li>
+      </ul>
+    </div>
+    <center>
+   <input type="submit" value="제출">
+  </center>
+  </form>
+
+</body>
+
+</html>

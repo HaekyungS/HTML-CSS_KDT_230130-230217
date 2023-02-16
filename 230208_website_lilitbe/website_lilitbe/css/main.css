@@ -1,0 +1,106 @@
+:root {
+  --height-all: 950px;
+  --width-all: 900px;
+  --background-color: rgb(172, 235, 227);
+  --font-color: rgb(13, 142, 228);
+}
+
+body {
+  display: grid;
+  height: var(--height-all);
+  width: var(--width-all);
+  color: var(--font-color);
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: var(--background-color);
+  height: 50px;
+  border: 1mm dotted white;
+}
+
+nav>ul {
+  background-color: var(--background-color);
+  border: 1mm dotted white;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+nav>ul>li {
+  list-style: none;
+}
+
+body>div>div {
+  height: 700px;
+  /*전체의 70%를쓰고싶음*/
+  display: grid;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+body>div>div>ul {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+body>div>div>ul>li {
+  list-style: none;
+}
+
+body>div>div>ul>li:nth-child(4) {
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAxMDhfMTIg%2FMDAxNjczMTEzNTE1NDcx.98U-h1DCiIBy773THmh-dPlSSt2gEpoMw6hVKM5AB0wg.icNWLUntWJA8KDc6LQKEbmtyJOhmCTGQWjgg53H2hswg.JPEG.moonriver1225%2FScreenshot%25A3%25DF20221216%25A3%25DF193110.jpg&type=sc960_832);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+}
+
+body>div>div>ul>li>iframe {
+  height: 100%;
+  width: 100%;
+}
+
+body>div>div:nth-child(2) {
+  background-color: antiquewhite;
+  color: navy;
+  height: 30px;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.motion_a {
+  transition: all ease 2s;
+}
+
+.motion_a:hover {
+  transform: scale(1.5) rotate(20deg);
+}
+
+.motion_a:active {
+  transform: scale(100);
+}
+
+.motion_div {
+  transition: all ease 5s;
+}
+
+.motion_div:hover {
+  transform: rotate(1turn);
+}

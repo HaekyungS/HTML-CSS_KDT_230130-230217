@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="wrap">
+
+  </div>
+  <script>
+    const wrap = document.querySelector('#wrap');
+    const URLList = ["http://www.naver.com/","http://www.google.com","http://www.daum.net/"];
+    for(Let i= 0; i<URLList.length; i++) {
+      Let text = `<a href="${URLList[i]}">{URLList[i]}</a>`;
+      wrap += text;
+    }
+  </script>
+<!-- 자바스크립트로 작성하신 거지만 다 작성된게 아니라 아직 안됨-->
+</body>
+</html>

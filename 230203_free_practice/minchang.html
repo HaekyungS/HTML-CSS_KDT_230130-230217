@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minchang</title>
+  <style>
+    body{
+      justify-content: center;
+      display: flex;
+    }
+  form {
+    border: 0.1cm solid aqua;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  textarea, li{
+      margin: 5px;
+      resize: none;
+    }
+  .grandma01 {
+    width: 640px;
+  }
+  .input_text{
+    width: 200px;
+    height: 50px;
+    text-align: start;
+  }
+  </style>
+</head>
+<body>
+  <form action="grandma.php" class="grandma01">
+    <div>
+      <h1>민창이의 일상 체크리스트</h1>
+      <ul>
+        <li>식사를 했나요?
+          <input type="checkbox" name="식사" value="morning">아침
+          <input type="checkbox" name="식사" value="lunch">점심
+          <input type="checkbox" name="식사" value="night">저녁
+        </li>
+        <li>운동을 했나요?
+          <input type="radio" name="운동" value="yes">예
+          <input type="radio" name="운동" value="no">아니오
+        </li>
+        <li>
+          해경이가 짜증나는 일이 있다며 하소연을 합니다. 어떻게 행동할 것입니까?
+          <div>
+            <input type="radio" name="answer" value="sel1-1"> 들으면서 같이 화를 내준다.<br />
+            <input type="radio" name="answer" value="sel1-2"> 내가 생각한 바에 대해 솔직하게 말하며 팩폭한다. <br />
+            <input type="radio" name="answer" value="sel1-3"> 대꾸해봐야 혼날 거 같으니 말을 안한다. <br />
+          </div>
+        </li>
+        <li>
+          아빠에게 1주일에 한번은 전화를 합니까?
+          <input type="radio" name="전화" value="yes">예
+          <input type="radio" name="전화" value="no">아니오
+        </li>
+          <li>
+          만약 아니오 라면 왜 안했습니까?
+          <input type="text" name="reason" placeholder="이유">
+          </li>
+          <li>
+            엄마에게 1주일에 한번은 전화를 합니까?
+            <input type="radio" name="전화2" value="yes">예
+            <input type="radio" name="전화2" value="no">아니오
+          </li>
+            <li>
+            만약 아니오 라면 왜 안했습니까?
+            <textarea name="reason" rows="3" cols="50" placeholder=" 이유를 쓰시오."></textarea>
+            </li>
+            <li>
+              해경이에게 1주일에 한번은 전화를 합니까?
+              <input type="radio" name="전화3" value="yes">예
+              <input type="radio" name="전화3" value="no">아니오
+            </li>
+              <li>
+              만약 아니오 라면 왜 안했습니까?<br/>
+              <textarea name="reason2" rows="3" cols="50" placeholder=" 이유를 쓰시오."></textarea>
+              </li>
+              <li>
+              가족들에게 할 말이 있으면 쓰세요. <br/>
+              <textarea name="say3" rows="3" cols="50" placeholder=" 할말을 쓰시오."></textarea>
+              </li>
+      </ul>
+    </div>
+    <center>
+      <input type="submit" value="제출" onclick="alert('제출되었습니다.')">
+     </center>
+  </form>
+
+</body>
+
+</html>

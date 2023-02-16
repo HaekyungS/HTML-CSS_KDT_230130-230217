@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --height-all: 950px;
+      --width-all: 900px;
+      --background-color: rgb(172, 235, 227);
+      --font-color: rgb(13, 142, 228);
+    }
+
+    body {
+      display: grid;
+      height: var(--height-all);
+      width: var(--width-all);
+      color: var(--font-color);
+      margin: auto;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      background-color: var(--background-color);
+      height: 50px;
+      border: 1mm dotted white;
+    }
+
+    nav>ul {
+      background-color: var(--background-color);
+      border: 1mm dotted white;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+    }
+
+    nav>ul>li {
+      list-style: none;
+    }
+
+    main>iframe {
+      height: 100%;
+      width: 100%;
+    }
+
+    body>div>div {
+      height: 700px;
+      /*전체의 70%를쓰고싶음*/
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 auto;
+    }
+
+    body>div>div>section>ul {
+      display: grid;
+      grid-template-rows: auto;
+      height: 100%;
+      padding: 0 auto;
+      margin: 0 auto;
+    }
+
+    body>div>div>section>ul>li {
+      list-style: none;
+    }
+
+    body>div>div>section>ul>li>iframe {
+      height: 100%;
+      width: 100%;
+    }
+
+    footer {
+      background-color: antiquewhite;
+      color: navy;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+
+    .motion_a {
+      transition: all ease 2s;
+    }
+
+    .motion_a:hover {
+      transform: scale(1.5) rotate(20deg);
+    }
+
+    .motion_a:active {
+      transform: scale(100);
+    }
+
+    .flex_center {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <header>
+      <p><a href="website_ex.html">Lit it be</a></p>
+    </header>
+    <nav>
+      <ul>
+        <li class="motion_a"><a target="frame" href="https://www.youtube.com/embed/zJx_dSKZacg">디지니랜드</a></li>
+        <li class="motion_a"><a target="frame" href="https://www.youtube.com/embed/P-X_7UODuwA">브뤼헤</a></li>
+        <li class="motion_a"><a target="frame" href="https://youtube.com/shorts/9EsV9TImhdw?feature=share">취리히</a></li>
+        <li class="motion_a"><a target="frame" href="https://www.youtube.com/embed/36-drEi_7IQ">치앙마이</a></li>
+        <li class="motion_a"><a target="frame" href="https://www.youtube.com/embed/cI12KZaroWU">방콕</a></li>
+      </ul>
+    </nav>
+    <div>
+      <main>
+        <iframe src="https://instagram.com/lititbee?igshid=YmMyMTA2M2Y=/embed" frameborder="0" allowfullscreen></iframe>
+        <!--다른 사이트를 보이게 하는 걸 잘 안하기도 하고 해킹문제도 있고 암튼 걍 문제가 많음-->
+      </main>
+      <section>
+        <ul>
+          <li><iframe name="frame" src="" frameborder="0"></iframe>
+            <p>위에 카테고리를 눌러주세용😆</p>
+          </li>
+          <li><iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d993373.6818951226!2d144.22699480439476!3d13.45152514692512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x671f76ff930f24ef%3A0x5571ae91c5b3e5a6!2z6rSM!5e0!3m2!1sko!2skr!4v1675841998569!5m2!1sko!2skr"
+              width="410" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+        </ul>
+      </section>
+    </div>
+    <footer>언니 보고 싶어여😭</footer>
+  </div>
+  <!--엑셀처럼 스크롤에 따라 스크롤바가 생길수있게 할 수 있을까?-->
+</body>
+
+</html>

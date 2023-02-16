@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      width: 300vw;
+      height: 500vh;
+      background-color: black;
+    }
+    #root {
+      width: 50vw;
+      height:50vh;
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: flex-start;
+      background-color: antiquewhite;
+    }
+
+    #root>div {
+      width: 100px;
+      height: 100px;
+    }
+
+    #item-1 {
+      background-color: aquamarine;
+    }
+
+    #item-2 {
+      background-color: rgb(40, 115, 180);
+      position: relative;
+      top: 50px;
+      left: 50px;
+    }
+
+    #item-3 {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      background-color: gray;
+      transition: all ease 1s;
+    }
+
+    #item-3:hover {
+      transform: rotate(5turn);
+    }/*이렇게 적용해보니까 2번이 겹쳐 올라있지만 움직일땐 3번이 위로옴*/
+
+    #item-4 {
+      position: relative;
+      top: 550px;
+      left: 50px;
+      background-color: gold;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div id="root">
+    <div id="item-1"></div>
+    <div id="item-2"></div>
+    <div id="item-3"></div>
+    <div id="item-4"></div>
+  </div>
+</body>
+
+</html>

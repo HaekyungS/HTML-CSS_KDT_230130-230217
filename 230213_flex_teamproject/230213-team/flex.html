@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/8ca6292418.js" crossorigin="anonymous"></script>
+  <style>
+    @media (min-width:1181px) and (max-width:1920px) {
+      .container {
+        height: 1080px;
+        width: 1800px;
+      }
+
+      main>div>div>div>p:nth-child(1) {
+        font-size: 30px;
+      }
+
+    }
+
+    @media (min-width:651px) and (max-width: 1180px) {
+      .container {
+        height: 820px;
+        width: 1180px;
+      }
+    }
+
+    @media screen and (max-width:650px) {
+      .container {
+        height: 800px;
+        width: 600px;
+      }
+    }
+
+    @font-face {
+      font-family: 'LINESeedKR-Bd';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+
+    }
+
+    * {
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      border: 1px solid black;
+      background-color: white;
+    }
+
+    main {
+      width: 90%;
+      height: 90%;
+      font-family: 'LINESeedKR-Bd';
+      font-size: 20px;
+    }
+
+    header {
+      background-color: azure;
+      width: 100%;
+      height: 10%;
+      text-align: center;
+      font-style: italic;
+      font-family: fantasy;
+      font-size: 50px;
+    }
+
+    main>div {
+      height: 90%;
+      width: 100%;
+    }
+
+    main>div>div {
+      display: flex;
+      transition: all ease 1ms;
+    }
+
+    main>div>div:hover {
+      transform: scale(1.3);
+    }
+
+    main>div>div>div {
+      height: 100%;
+      width: 50%;
+    }
+
+    #heeeun {
+      width: 100%;
+      height: 33.4%;
+      background-color: rgb(247, 220, 236);
+      font-weight: bolder;
+    }
+
+    #jieun {
+      width: 100%;
+      height: 33.3%;
+      background-color: rgb(255, 250, 220);
+      flex-direction: row;
+    }
+
+    #haekyung {
+      width: 100%;
+      height: 33.3%;
+      background-color: rgb(191, 245, 227);
+    }
+  </style>
+
+  <script src="https://kit.fontawesome.com/8ca6292418.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <header>LUNCH
+        <i class="fa-sharp fa-solid fa-burger"></i>
+      </header>
+
+      <div>
+        <div id="heeeun">
+          <div>
+            <p>소고기국밥<i class="fa-sharp fa-solid fa-drumstick-bite"></i></p>
+            <p>Beef Gukbap</p>
+            <P><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </P>
+            <P>든든 뜨끈한 국밥 한그릇</P>
+
+          </div>
+          <div>
+            <p>딸기라떼<i class="fa-sharp fa-solid fa-champagne-glasses"></i></p>
+            <p>Strawberyy Latte</p>
+            <P><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            <P>국내산 딸기가 아니여서 다소 아쉬움.
+
+            </P>
+          </div>
+
+        </div>
+
+        <div id="jieun">
+          <div>
+            <P>소고기국밥
+              <i class="fa-sharp fa-solid fa-drumstick-bite"></i>
+            </P>
+            <P>Sogogi Gukbap</P>
+            <P>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </P>
+            <P> 한국인이 사랑하는 대중적인 맛</P>
+
+          </div>
+
+          <div>
+            <p>카페모카 <i class="fa-sharp fa-solid fa-mug-hot"></i></p>
+            <p>CafeMocha</p>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <P>진한초콜렛과 커피가 어우러진 맛</P>
+            <i class="fa-sharp fa-solid fa-cherries"></i>
+          </div>
+        </div>
+        <div id="haekyung">
+          <div>
+            <p>
+              닭가슴살
+              <i class="fa-sharp fa-solid fa-drumstick-bite"></i>
+            </p>
+            <p>Dakkaseumsal</p>
+            <p><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>진한 후추향과 퍽퍽한 닭가슴살의 조화로운 맛</p>
+          </div>
+          <div>
+            <p>콩나물무침
+              <i class="fa-sharp fa-solid fa-seedling"></i>
+            </p>
+            <p>Kongnamul Muchim</p>
+            <p><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>아삭하고 매콤함이 조화로운 양파맛</p>
+
+          </div>
+        </div>
+
+      </div>
+  </div>
+  </main>
+</body>
+
+</html>

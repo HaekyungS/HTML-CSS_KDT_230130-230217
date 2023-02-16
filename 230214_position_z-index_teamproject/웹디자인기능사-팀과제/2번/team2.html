@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 희은스타일우선해놈 -->
+  <style>
+    * {
+      text-align: center;
+
+    }
+
+    body {
+      margin: 0;
+      width: 100vw;
+
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 1200px;
+      height: 700px;
+      border: 1px solid black;
+      border-top: 0;
+
+
+    }
+
+    #container>header {
+      display: flex;
+      width: 1200px;
+      height: 100px;
+      border: 1px solid black;
+      border-bottom: 0;
+      position: relative;
+    }
+
+    #container>header>.logo {
+      width: 150px;
+      height: 100px;
+      border: 1px dotted black;
+
+    }
+
+    #container>header>.lowbar {
+      width: 1050px;
+      height: 100px;
+
+    }
+
+    #container>div {
+      display: flex;
+      flex-direction: column;
+      width: 1200px;
+      height: 300px;
+      border: 1px solid black;
+      border-bottom: 0;
+
+
+    }
+
+    #container>.main {
+      display: flex;
+      flex-direction: row;
+      width: 1200px;
+      height: 200px;
+      border: 0;
+
+
+    }
+
+    #container>.main>div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      border: 1px solid black;
+      border-right: 0;
+
+    }
+
+
+    #container>footer {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100px;
+
+
+    }
+
+    #container>footer>div:nth-child(1) {
+      width: 200px;
+      height: 100px;
+      border-right: 1px solid black;
+
+
+    }
+
+    #container>footer>div:nth-child(2) {
+      width: 800px;
+      height: 100px;
+
+    }
+
+    #container>footer>div:nth-child(3) {
+      width: 200px;
+      height: 100px;
+      border-left: 1px solid black;
+
+    }
+
+    /* 해경씨아래부분 */
+    nav {
+      display: flex;
+      height: 200px;
+      width: 600px;
+      margin: 0;
+      border: 1px solid black;
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      background-color: white;
+    }
+
+    nav>div {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid black;
+    }
+
+    nav>div:nth-child(4) {
+      border-right: 0px;
+    }
+
+    nav>div>div {
+      width: 90%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    nav>div>div>div:nth-child(1) {
+      width: 100%;
+      height: 20%;
+      text-align: center;
+    }
+
+    nav>div>div>div:nth-child(1):hover {
+      background-color: black;
+      color: aliceblue;
+    }
+
+    nav>div>div>div:nth-child(2) {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav>div>div>div:nth-child(2)>div {
+      width: 100%;
+      height: 25%;
+      text-align: center;
+    }
+
+    nav>div>div>div>div:hover {
+      background-color: black;
+      color: aliceblue;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 희은 우선아래본문  -->
+  <div id="container">
+
+    <header>
+      <section class="logo">로고</section>
+      <section class="lowbar">로고바</section>
+      <!--해경 아래부분-->
+      <nav>
+        <div>
+          <div>
+            <div>탑</div>
+            <div>
+              <div>블라우스</div>
+              <div>티</div>
+              <div>셔츠</div>
+              <div>니트</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>아우터</div>
+            <div>
+              <div>자켓</div>
+              <div>코트</div>
+              <div>가디건</div>
+              <div>머플러</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>팬츠</div>
+            <div>
+              <div>청바지</div>
+              <div>짧은바지</div>
+              <div>긴바지</div>
+              <div>레깅스</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>악세서리</div>
+            <div>
+              <div>귀고리</div>
+              <div>목걸이</div>
+              <div>반지</div>
+              <div>팔찌</div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div>이미지</div>
+
+
+
+    <div class="main">
+      <div>공지사항</div>
+      <div>배너</div>
+      <div>바로가기</div>
+    </div>
+
+
+    <footer>
+      <div>로고</div>
+      <div>복사본</div>
+      <div>아이콘</div>
+    </footer>
+  </div>
+</body>
+
+</html>

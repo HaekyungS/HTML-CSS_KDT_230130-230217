@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      background-color: aqua;
+      height: 100%;
+      width: 100%;
+      /*  text-align: center;*/
+    }
+
+    .body_style {
+      display: flex;
+    }
+
+    div {
+      display: flex;
+      margin: auto;
+    }
+
+    a {
+      display: flex;
+      width: 100%;
+    }
+
+    .test {
+      width: 100px;
+      height: 100px;
+      background: white;
+      text-align: center;
+      text-decoration: none;
+      transition: all 1s;
+    }
+
+    .test:hover {
+      transform: rotate(3turn)
+    }
+
+    .test2 {
+      width: 150px;
+      height: 100px;
+      background-color: beige;
+      text-align: center;
+      text-decoration: none;
+      transition: all ease 1s;
+    }
+
+    .test2:hover {
+      transform: scale(5) rotate(45deg);
+    }
+
+    /*.div_center{
+      text-align: center;
+      margin: auto;
+    }*/
+  </style>
+</head>
+
+<body class="body_style">
+  <div class="test">
+    <a href="http://map.google.com">
+      <div>Google</div>
+    </a>
+  </div>
+  <!--scale 크기를 키우고 줄이고, rotate는 도는거-->
+  <div class="test2">
+    <a href="https://www.notion.so/" target="_blank">
+      <!--<div class="div_center">Notion</div>-->
+    </a>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body>div>div {
+  align-items: center;
+  flex-direction: column;
+}
+
+body>div>div>div {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  height: 40px;
+  width: 170px;
+  margin: 10px;
+  border: 2px solid var(--point-color);
+  display: flex;
+  transition: top ease 1ms;
+}
+
+body>div>div>div:hover {
+  transform: rotate(10deg) scale(1.5);
+}
+
+a {
+  width: 100%;
+  height: 100%;
+  color: var(--color-whitepurple);
+  text-align: center;
+}

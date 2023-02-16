@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grandma</title>
+  <style>
+    body{
+      justify-content: center;
+      display: flex;
+    }
+    form {
+      border: 0.1cm solid aqua;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    textarea, li{
+      margin: 5px;
+      resize: none;
+    }
+    .grandma01 {
+      width: 640px;
+    }
+    </style>
+</head>
+<body>
+  <form action="grandma.php" class="grandma01">
+    <div>
+      <h1>할머니의 일상 체크리스트</h1>
+      <ul>
+        <li>세안을 했나요?
+          <input type="checkbox" name="세안" value="morning">아침
+          <input type="checkbox" name="세안" value="night">저녁
+        </li>
+        <li>식사를 했나요?
+          <input type="checkbox" name="식사" value="morning">아침
+          <input type="checkbox" name="식사" value="lunch">점심
+          <input type="checkbox" name="식사" value="night">저녁
+        </li>
+        <li>혈압약을 먹었나요?
+          <input type="radio" name="혈압약" value="yes">예
+          <input type="radio" name="혈압약" value="no">아니오
+        </li>
+        <li>
+          누군가 초인종을 눌렀습니다. 어떻게 행동할 것입니까?
+          <div>
+            <input type="radio" name="door" value="sel1-1"> 문을 열고 기다린다<br />
+            <input type="radio" name="door" value="sel1-2"> 문은 열지 않고 앞에 서서 하염없이 기다린다.<br />
+            <input type="radio" name="door" value="sel1-3"> 초인종이 다시 눌리기 전까지 그냥 하던거 한다.<br />
+          </div>
+        </li>
+        <li>
+          핸드폰이 울립니다. 화면을 보니 시도 라고 떠있습니다. 어떻게 할 것 입니까?
+          <div>
+            <input type="radio" name="action1" value="sel2-1">핸드폰 화면을 덮는다. <br />
+            <input type="radio" name="action1" value="sel2-2">전화를 받아 말을 한다. <br />
+            <input type="radio" name="action1" value="sel2-3">전화를 받았다 끊는다. <br />
+          </div>
+        </li>
+        <li>
+          점심시간이 되었습니다. 해경이 방문에는 학원갔다고 식사하라는 문구가 있습니다. 어떻게 하시겠습니까?
+          <div>
+            <input type="radio" name="action2" value="sel3-1"> 시간은 됐지만 누구 하나 올 수도 있으니 일단 기다린다. <br />
+            <input type="radio" name="action2" value="sel3-2"> 집에 안오냐고 전화를 해본다. <br />
+            <input type="radio" name="action2" value="sel3-3"> 밥을 차려서 먹는다. <br />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <center>
+      <input type="submit" value="제출">
+     </center>
+  </form>
+
+</body>
+
+</html>

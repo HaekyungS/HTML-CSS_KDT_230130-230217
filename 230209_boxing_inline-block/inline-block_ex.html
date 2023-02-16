@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    div {
+      margin-top: 100px;
+    }
+    div>div {
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+      background-color: skyblue;
+      font-size: 50%;
+      padding: 10px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div><!--같은 설정을 여러 태그에게 하면 좋지 않음. 부모를 만들어 wraping하여 만들기.-->
+    <div>나는</div>
+    <div>날개달린</div>
+    <div>호랑이다.</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dakyung</title>
+  <style>
+    body{
+      justify-content: center;
+      display: flex;
+    }
+    form {
+      border: 0.1cm solid aqua;
+  
+    }
+    h1 {
+      text-align: center;
+    }
+    textarea, li{
+      margin: 5px;
+      resize: none;
+    }
+    .grandma01 {
+      width: 640px;
+    }
+    </style>
+</head>
+<body>
+  <form action="grandma.php" class="grandma01">
+    <div>
+      <h1>다경이의 일상 체크리스트</h1>
+      <ul>
+        <li>식사를 했나요?
+          <input type="checkbox" name="식사" value="morning">아침
+          <input type="checkbox" name="식사" value="lunch">점심
+          <input type="checkbox" name="식사" value="night">저녁
+        </li>
+        <li>몇시에 잠을 잤나요?
+          <input type="time" name="시간" value="sleeptime">
+        </li>
+        <li>
+          유안이와 노는 시간을 갖고 있나요?
+          <input type="radio" name="유안" value="yes">예
+          <input type="radio" name="유안" value="no">아니오
+        </li>
+        <li>
+          만약 아니오 라면 왜 못놀았습니까?<br/>
+          <textarea name="reason2" rows="3" cols="50" placeholder=" 이유를 쓰시오."></textarea>
+          </li>
+        <li>
+          본인만의 시간을 갖고 있나요?
+          <input type="radio" name="자유시간" value="yes">예
+          <input type="radio" name="자유시간" value="no">아니오
+        </li>
+        <li>
+          만약 아니오 라면 왜 못갖습니까?<br/>
+              <textarea name="reason3" rows="3" cols="50" placeholder=" 이유를 쓰시오."></textarea>
+          </li>
+          <li>
+            유안이가 매일 헨리 이야기를 하며 헨리와 결혼한다 합니다.<br/>
+            어떻게 하시겠습니까?
+            <div>
+              <input type="radio" name="answer" value="sel4-1"> 아직은 결혼을 논하기엔 이른 나이라고 사람마음은 변하기 마련이라 현실적으로 말합니다.<br />
+              <input type="radio" name="answer" value="sel4-2"> 그럼 이모는? 하고 이모에 대해 까먹지 않게 상기시켜줍니다. <br />
+              <input type="radio" name="answer" value="sel4-3"> 저것도 다 한때니까 그러려니 하고 냅둡니다. <br />
+            </div>
+          </li>
+        <li>
+          가족들에게 할 말이 있으면 쓰세요. <br/>
+              <textarea name="say4" rows="3" cols="50" placeholder=" 할말을 쓰시오."></textarea>
+        </li>
+      </ul>
+    </div>
+    <center>
+      <input type="submit" value="제출">
+     </center>
+  </form>
+
+</body>
+
+</html>

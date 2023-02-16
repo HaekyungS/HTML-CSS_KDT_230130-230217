@@ -1,0 +1,36 @@
+body>div>div{
+  align-items: center;
+}
+p {
+  margin: 10px;
+  color: aliceblue;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: var(--font-main);
+}
+
+ol{
+  margin: 0;
+}
+
+header{
+  overflow: visible;
+}
+
+h1 {
+  text-align: center;
+  transition: all 3s;
+}
+
+h1:hover {
+  transform: scale(1.5);
+}
+
+body>div>div>footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

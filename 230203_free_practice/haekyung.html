@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haekyung</title>
+  <style>
+    body{
+      justify-content: center;
+      display: flex;
+    }
+    form {
+      border: 0.1cm solid aqua;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    textarea, li{
+      margin: 5px;
+      resize: none;
+    }
+    .grandma01 {
+      width: 640px;
+    
+    }
+    </style>
+</head>
+<body>
+  <form action="grandma.php" class="grandma01">
+    <div>
+      <h1>해경이의 일상 체크리스트</h1>
+      <ul>
+        <li>약을 먹었나요?
+          <input type="checkbox" name="약" value="morning">아침
+          <input type="checkbox" name="약" value="night">저녁
+        </li>
+        <li>식사를 했나요?
+          <input type="checkbox" name="식사" value="morning">아침
+          <input type="checkbox" name="식사" value="lunch">점심
+          <input type="checkbox" name="식사" value="night">저녁
+        </li>
+        <li>몇시에 잠을 잤나요?
+          <input type="time" name="시간" value="sleeptime">
+        </li>
+        <li>
+          술을 마셨나요?
+            <input type="radio" name="전화3" value="yes">예
+            <input type="radio" name="전화3" value="no">아니오
+        </li>
+        <li>
+          만약 "예" 라면 왜 마셨습니까?<br/>
+          <textarea name="reason4" rows="3" cols="50" placeholder=" 이유를 쓰시오."></textarea>        </li>
+        <li>
+          가족들에게 할 말이 있으면 쓰세요. <br/>
+              <textarea name="say5" rows="3" cols="50" placeholder=" 할말을 쓰시오."></textarea>
+        </li>
+      </ul>
+    </div>
+    <center>
+      <input type="submit" value="제출">
+     </center>
+  </form>
+
+</body>
+
+</html>

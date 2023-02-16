@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 희은스타일우선해놈 -->
+  <style>
+    * {
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      width: 100vw;
+
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 1200px;
+      height: 700px;
+      border: 1px solid black;
+      border-top: 0;
+
+
+    }
+
+    #container>header {
+      display: flex;
+      width: 1200px;
+      height: 100px;
+      border: 1px solid black;
+      border-bottom: 0;
+      position: relative;
+    }
+
+    #container>header>.logo {
+      width: 150px;
+      height: 100px;
+      border: 1px dotted black;
+
+    }
+
+    #container>header>.lowbar {
+      width: 1050px;
+      height: 100px;
+
+    }
+
+    #container>div {
+      display: flex;
+      flex-direction: column;
+      width: 1200px;
+      height: 300px;
+      border: 1px solid black;
+      border-bottom: 0;
+
+
+    }
+
+    #container>.main {
+      display: flex;
+      flex-direction: row;
+      width: 1200px;
+      height: 200px;
+      border: 0;
+
+
+    }
+
+    #container>.main>div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      border: 1px solid black;
+      border-right: 0;
+
+    }
+
+
+    #container>footer {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100px;
+
+
+    }
+
+    #container>footer>div:nth-child(1) {
+      width: 200px;
+      height: 100px;
+      border-right: 1px dotted black;
+
+
+    }
+
+    #container>footer>div:nth-child(2) {
+      width: 800px;
+      height: 100px;
+
+    }
+
+    #container>footer>div:nth-child(3) {
+      width: 200px;
+      height: 100px;
+      border-left: 1px dotted black;
+
+    }
+
+    p {
+      margin-top: 15px;
+      font-size: 33px;
+    }
+
+    i {
+      padding:10px;
+      color: rgb(10, 105, 53);
+    }
+
+    .logo1 {
+      font-size: 50px;
+      color: black;
+    }
+
+    /* 해경씨아래부분 */
+    nav {
+      display: flex;
+      height: 200px;
+      width: 600px;
+      margin: 0;
+      border: 1px solid black;
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      background-color: white;
+    }
+
+    nav>div {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid black;
+    }
+
+    nav>div:nth-child(4) {
+      border-right: 0px;
+    }
+
+    nav>div>div {
+      width: 90%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    nav>div>div>div:nth-child(1) {
+      width: 100%;
+      height: 20%;
+      text-align: center;
+    }
+
+    nav>div>div>div:nth-child(1):hover {
+      background-color: black;
+      color: aliceblue;
+    }
+
+    nav>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(1):hover {
+        background-color: rgb(247, 246, 245);
+      }
+
+      nav>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(2):hover {
+        background-color: rgb(241, 241, 192);
+        color: blanchedalmond
+      }
+
+      nav>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(3):hover {
+        background-color: rgb(247, 211, 238);
+      }
+
+      nav>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(4):hover {
+        background-color: rgb(204, 204, 247);
+      }
+
+
+    nav>div>div>div:nth-child(2) {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav>div>div>div:nth-child(2)>div {
+      width: 100%;
+      height: 25%;
+      text-align: center;
+    }
+
+    nav>div>div>div>div:hover {
+      background-color: black;
+      color: aliceblue;
+    }
+
+    nav>div:nth-child(2)>div>div:nth-child(1):hover {
+      background-color: gray;
+    }
+
+    nav>div:nth-child(2)>div>div:nth-child(2)>div:nth-child(1):hover {
+      background-color: green;
+    }
+
+    nav>div:nth-child(2)>div>div:nth-child(2)>div:nth-child(2):hover {
+      background-color: rgb(12, 69, 39);
+
+      color: blanchedalmond }
+
+      nav>div:nth-child(3)>div>div:nth-child(1):hover {
+        background-color: red;
+      }
+
+      nav>div:nth-child(3)>div>div:nth-child(2)>div:nth-child(1):hover {
+        background-color: orangered;
+      }
+
+      nav>div:nth-child(3)>div>div:nth-child(2)>div:nth-child(2):hover {
+        background-color: yellow;
+        color: blanchedalmond
+      }
+
+      nav>div:nth-child(3)>div>div:nth-child(2)>div:nth-child(3):hover {
+        background-color: green;
+      }
+
+      nav>div:nth-child(3)>div>div:nth-child(2)>div:nth-child(4):hover {
+        background-color: blue;
+      }
+
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+  </style>
+  <script src="https://kit.fontawesome.com/8ca6292418.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- 희은 우선아래본문  -->
+  <div id="container">
+
+    <header>
+      <section class="logo">
+        <img src="./다운로드2.png" width="80px" height="90px">
+      </section>
+      <section class="lowbar">NELL</section>
+      <!--해경 아래부분-->
+      <nav>
+        <div>
+          <div>
+            <div>희은</div>
+            <div>
+              <div>흰색</div>
+              <div>연노랑</div>
+              <div>연핑크</div>
+              <div>스카이블루</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>지은</div>
+            <div>
+              <div>그린</div>
+              <div>다크그린</div>
+              <div>정글그린</div>
+              <div>딥그린</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>빨강</div>
+            <div>
+              <div>주황</div>
+              <div>노랑</div>
+              <div>초록</div>
+              <div>파랑</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>해경</div>
+            <div>
+              <div><a href="https://www.youtube.com/@joodoong/videos">주둥이방송</a></div>
+              <div><a href="https://www.youtube.com/@YOURANGSS">유랑쓰</a></div>
+              <div><a href="https://comic.naver.com/webtoon/list?titleId=790713&weekday=tue">대학원탈출일지</a></div>
+              <div><a href="https://www.instagram.com/jxxvvxxk/">이재욱</a></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div><img
+      src=https://search.pstatic.net/sunny/?src=https%3A%2F%2Fimage.genie.co.kr%2FY%2FIMAGE%2FIMG_MUZICAT%2FIV2%2FGenie_Magazine%2F12716%2FMgz_Main_Top_20221212172640.jpg%2Fdims%2Fresize%2FQ_80%2C0&type=sc960_832
+      height="295" width="600"></div>
+
+
+
+    <div class="main">
+      <div><iframe src="./index.html" width="400" height="200"></iframe></div>
+      <div><iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816699.467419158!2d126.47871751648405!3d36.908709991251506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654bd3b09a8c6f%3A0x5e4f06f57d41aff5!2z7IOk67iM7J6R!5e0!3m2!1sko!2skr!4v1676363157582!5m2!1sko!2skr"
+        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div><iframe width="400" height="200" src="https://www.youtube.com/embed/x6q9AxPUTOs" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe></div>
+    </div>
+
+
+    <footer>
+      <div>
+        <div class="logo1"><i class="fa-brands fa-google"></i></div>
+      </div>
+      <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Baekhyun_logo.svg/640px-Baekhyun_logo.svg.png" alt="bh" width="100%" height="100%"></div>
+      <div>
+        <p><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></a></i></p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

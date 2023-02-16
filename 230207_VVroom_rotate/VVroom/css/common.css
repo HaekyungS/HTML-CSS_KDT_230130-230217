@@ -1,0 +1,75 @@
+:root {
+  --point-color: rgb(118, 101, 212);
+  --color-whitepurple: rgb(202, 177, 212);
+  --font-main: Arial;
+  --font-title: 'Times New Roman', Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+@media screen and (max-width="430px") {
+  body{
+    width: 430px;
+    height: 915px;
+  }
+}
+
+@media (min-width="431px") and (max-width="820px") {
+  body{
+    width: 820px;
+    height: 1180px;
+  }
+}
+
+@media (min-width="821px") and (max-width="1920px") {
+  body{
+    width: 1920px;
+    height: 1200px;
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: var(--point-color);
+  margin: 0 auto;
+}
+
+body>div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+body>div>div {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  border: 0.1cm solid var(--point-color);
+  color: var(--color-whitepurple);
+  transition: all ease-in-out 1s;
+}
+
+body>div>div:hover {
+  transform: scale(1.1);
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+a {
+  color: var(--color-whitepurple);
+  text-decoration: none;
+}

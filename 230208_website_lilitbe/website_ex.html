@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --height-all: 950px;
+      --width-all: 900px;
+      --background-color: rgb(172, 235, 227);
+      --font-color: rgb(13, 142, 228);
+    }
+
+    body {
+      display: grid;
+      height: var(--height-all);
+      width: var(--width-all);
+      color: var(--font-color);
+      margin: auto;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      background-color: var(--background-color);
+      height: 50px;
+      border: 1mm dotted white;
+    }
+
+    nav>ul {
+      background-color: var(--background-color);
+      border: 1mm solid white;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      justify-content: space-between
+    }
+
+    nav>ul>li {
+      list-style: none;
+    }
+
+    body>div>div {
+      height: 700px;
+      /*전체의 70%를쓰고싶음*/
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1mm dashed beige;
+    }
+
+    section {
+      background-color: var(--background-color);
+      text-align: center;
+    }
+
+    body>div>div>div {
+      display: grid;
+      background-color: var(--background-color);
+      border: 1mm double;
+    }
+    section>p{
+      margin: auto;
+    }
+
+    footer {
+      background-color: antiquewhite;
+      color: navy;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .motion_a {
+      transition: all ease 2s;
+    }
+
+    .motion_a:hover {
+      transform: scale(1.5) rotate(20deg);
+    }
+    .motion_a:active{
+      transform: scale(100);
+    }
+    .flex_center{
+      display: flex;
+      justify-content: center;
+    }
+    .margin_auto{
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <header>
+      <p><a href="website_ex.html">Lit it be</a></p>
+    </header>
+    <nav>
+      <ul>
+        <li class="motion_a"><a target="frame" href="http://www.google.com/embed">에펠탑</a></li>
+        <li class="motion_a"><a target="frame" href="http://www.notion.so/">브뤼헤</a></li>
+        <li class="motion_a"><a target="frame" href="https://www.youtube.com/embed/cI12KZaroWU">취리히</a></li>
+        <li class="motion_a"><a target="frame" href="http://drive.google.com/">치앙마이</a></li>
+        <li class="motion_a"><a target="frame" href="http://www.naver.com/">방콕</a></li>
+      </ul>
+    </nav>
+    <main>
+      
+      <!--네이버, 구글 등에서 디도스 공격 등의 사유로 막아서 구동이 안됨...-->
+    </main>
+    <div>
+      <section class="flex_center"><p>부분이당</p></section>
+      <div>
+        <article class="flex_center margin_auto"><p>기사당</p></article>
+        <aside class="flex_center margin_auto"><p>옆구리당</p></aside>
+      </div>
+    </div>
+    <footer>발바닥이당</footer>
+  </div><!--엑셀처럼 스크롤에 따라 스크롤바가 생길수있게 할 수 있을까?-->
+</body>
+
+</html>

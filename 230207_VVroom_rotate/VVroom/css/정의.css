@@ -1,0 +1,48 @@
+body>div>div>header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top ease 1ms;
+  font-size: larger;
+}
+
+body>div>div>header:hover{
+  transform: scale(1.5);
+}
+
+body>div>div>div{
+  width: 95%;
+  height: 90%;
+}
+body>div>div>div>div{
+  height: 15%;
+}
+table{
+  height: 75%;
+  width: 85%;
+  text-align: center;
+  margin: auto;
+}
+body>div>div>div>footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+body>div>div>footer>a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+body>div>div>footer>a>div{
+  padding: auto;
+}
+
+.border_solid_purple{
+  border: 0.1cm solid var(--point-color);
+}
