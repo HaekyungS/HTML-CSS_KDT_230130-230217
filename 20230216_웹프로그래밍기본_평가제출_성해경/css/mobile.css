@@ -1,0 +1,232 @@
+@media screen and (max-width:430px) {
+ 
+  body {
+    height: 1864px;
+    width: 430px;
+  }
+
+  body>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+
+  body>div>header {
+    height: 110px;
+    width: 100%;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    z-index: 3;
+  }
+
+  body>div>header>div:nth-child(1) {
+    position: absolute;
+    bottom: 27px;
+    font-weight: 900;
+  }
+
+  body>div>header>div:nth-child(1):hover {
+    text-decoration: underline;
+    line-height: 15px;
+  }
+
+  body>div>header>div:nth-child(2) {
+    position: absolute;
+    right: 18px;
+    bottom: 27px;
+  }
+
+  body>div>nav{
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* 모바일만 안보이길래 z-index로 뒤로 숨겨둠
+  nav를 숨기기 위해 두번째 div를 100%사이즈로 조정 및 나머지 항목들을 z-index를 통해 가장 상위로 노출되게 설정. */
+
+  body>div>div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 2;
+  }
+
+  body>div>div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body>div>div:nth-child(3)>div {
+    position: absolute;
+    left: 23px;
+    font-weight: 700;
+    font-size: 96px;
+  }
+
+  body>div>div:nth-child(3)>div:hover {
+    text-decoration: underline var(--color-blue);
+    line-height: 100%;
+  }
+
+  /* 밑줄 얇게 고치기 -두꺼워보이는데 기분탓인가 확인하기 */
+
+  body>div>div:nth-child(3)>div:nth-child(1) {
+    top: 329px;
+    z-index: 1;
+  }
+
+  body>div>div:nth-child(3)>div:nth-child(2) {
+    top: 382px;
+    color: var(--color-blue);
+    z-index: 2;
+  }
+
+  body>div>div:nth-child(3)>div:nth-child(3) {
+    top: 435px;
+    color: var(--color-blue);
+    z-index: 3;
+  }
+
+  body>div>div:nth-child(3)>div:nth-child(4) {
+    top: 488px;
+    color: var(--color-blue);
+    z-index: 4;
+  }
+
+  body>div>div:nth-child(3)>div:nth-child(5) {
+    top: 541px;
+    z-index: 5;
+  }
+
+  body>div>div:nth-child(4) {
+    width: 8px;
+    height: 14px;
+    top: 750px;
+    left: 208px;
+    color: var(--color-blue);
+    transform: rotate(90deg);
+  }
+
+  body>div>div:nth-child(5) {
+    width: 285px;
+    height: 30px;
+    top: 817px;
+    left: 73px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+    color: var(--color-blue);
+  }
+
+  /* vertor 아이콘으로 해야한다면 찾기 */
+
+  body>div>div:nth-child(6) {
+    width: 430px;
+    height: 732px;
+    top: 932px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+  }
+
+  body>div>div:nth-child(6)>div {
+    height: 130px;
+    position: absolute;
+    left: 19px;
+    font-family: 'karantina';
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 130px;
+  }
+
+  body>div>div:nth-child(6)>div:nth-child(1) {
+    width: 191px;
+    top: 231px;
+    z-index: 3;
+  }
+
+  body>div>div:nth-child(6)>div:nth-child(2) {
+    width: 225px;
+    top: 344px;
+    z-index: 2;
+  }
+
+  body>div>div:nth-child(6)>div:nth-child(3) {
+    width: 286px;
+    top: 455px;
+    z-index: 1;
+  }
+
+  body>div>div:nth-child(6)>div:nth-child(4) {
+    height: 4px;
+    width: 280px;
+    top: 581px;
+    background-color: #ffffff;
+  }
+
+  body>div>div:nth-child(6)>div:nth-child(5) {
+    width: 35px;
+    height: 61px;
+    top: 366px;
+    left: 327px;
+  }
+
+  body>div>footer {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 1664px;
+    background-color: #333333;
+    z-index: 3;
+  }
+
+  body>div>footer>div {
+    position: absolute;
+    left: 43px;
+  }
+
+  body>div>footer>div:nth-child(1) {
+    height: 2px;
+    width: 345px;
+    top: 82px;
+    background-color: var(--line-color);
+  }
+
+  body>div>footer>div:nth-child(2) {
+    top: 94px;
+    width: 100%;
+  }
+
+  body>div>footer>div:nth-child(2)>div {
+    height: 10px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 8px;
+    color: var(--footer-font-color);
+  }
+
+  body>div>footer>div:nth-child(2)>div:hover {
+    text-decoration: underline var(--color-blue);
+    line-height: 10px;
+  }
+
+  body>div>footer>div:nth-child(2)>div:nth-child(2) {
+    top: 12px;
+  }
+
+  body>div>footer>div:nth-child(2)>div:nth-child(3) {
+    top: 14px;
+  }
+
+  body>div>footer>div:nth-child(2)>div:nth-child(4) {
+    top: 16px;
+  }
+}
