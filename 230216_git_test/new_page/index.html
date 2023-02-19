@@ -21,21 +21,22 @@
       <div class="Photo"></div>
     </div>
     <div>
-      <button type="button" id="전원우"></button>
-      <button id="조슈아"></button>
-      <button id="루피"></button>
-      <button id="잔망루피"></button>
+      <button type="button" id="전원우" onclick="button_click()"></button>
+      <button type="button" id="조슈아" onclick="button_click()"></button>
+      <button type="button" id="루피" onclick="button_click()"></button>
+      <button type="button" id="잔망루피" onclick="button_click()"></button>
     </div>
   </div>
 
   <script>
     // console.log(window.confirm('Love Luxica!'));
     
-    
+    function button_click(){
     var divs = document.getElementsByClassName('Photo');
     for(var i=0; i<divs.length; i++){
       divs[i].style.background='url(./css/전원우'+i+'.jpg)';
     }
+  }
 
   </script>
 
