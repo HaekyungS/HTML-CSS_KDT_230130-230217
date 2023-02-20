@@ -40,7 +40,6 @@ body>div>div:nth-child(2)>div {
   height: 50%;
   border: var(--border-stlye_s);
   background-color: aliceblue;
-  margin: auto;
   position: absolute;
 }
 
@@ -120,5 +119,6 @@ body>div>div:nth-child(3)>button:nth-child(4) {
 
 .Photo{
   background-size:cover;
-  
+  margin: auto;
+  background-position: center;
 }
