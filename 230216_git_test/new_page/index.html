@@ -15,28 +15,37 @@
       [로그인]
     </div>
     <div>
-      <div class="Photo"></div>
-      <div class="Photo"></div>
-      <div class="Photo"></div>
-      <div class="Photo"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-    <div>
-      <button type="button" id="전원우" onclick="button_click()"></button>
-      <button type="button" id="조슈아" onclick="button_click()"></button>
-      <button type="button" id="루피" onclick="button_click()"></button>
-      <button type="button" id="잔망루피" onclick="button_click()"></button>
+    <div id="buttons">
+      <button type="button" onclick="button_click()"></button>
+      <button type="button" onclick="button_click()"></button>
+      <button type="button" onclick="button_click()"></button>
+      <button type="button" onclick="button_click()"></button>
     </div>
   </div>
 
   <script>
     // console.log(window.confirm('Love Luxica!'));
-    
-    function button_click(){
-    var divs = document.getElementsByClassName('Photo');
-    for(var i=0; i<divs.length; i++){
-      divs[i].style.background='url(./css/전원우'+i+'.jpg)';
+    let buttons = document.getElementById('buttons');
+    let buttonName = ["전원우", "조슈아", "루피", "잔망루피"];
+
+    function button_click() {
+      for (i = 0; i < buttons.children.length; i++) {
+        Name = buttonName[i];
+        console.dir(Name)
+        for (i = 0; i < buttons.children.length; i++) {
+          buttons.previousElementSibling.children[i].style.background = 'url(./css/' + Name + i + '.jpg)';
+        }
+      }
+      //문제1. 한번 누르면 끝남
+      //문제2. 자꾸 전원우만 나옴 열받게만드네
+
     }
-  }
+    console.dir(buttons.previousElementSibling.children);
 
   </script>
 
