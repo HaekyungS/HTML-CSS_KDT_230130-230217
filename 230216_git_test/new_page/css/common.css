@@ -24,7 +24,10 @@ body>div {
 body>div>div:nth-child(1) {
   height: 7%;
   width: 100%;
-  border-bottom: var(--border-stlye_s)
+  border-bottom: var(--border-stlye_s);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body>div>div:nth-child(2) {
@@ -115,10 +118,4 @@ body>div>div:nth-child(3)>button:nth-child(3) {
 
 body>div>div:nth-child(3)>button:nth-child(4) {
   background-image: url(./잔망루피.jpg);
-}
-
-.Photo{
-  background-size:cover;
-  margin: auto;
-  background-position: center;
 }
